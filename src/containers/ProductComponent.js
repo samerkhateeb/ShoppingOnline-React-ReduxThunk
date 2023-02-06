@@ -30,10 +30,6 @@ const ProductComponent = () => {
   });
 
   return <>{rederList}</>;
-
-  //   console.log(product);
-
-  //   const { id, title } = product[0];
 };
 
 export default ProductComponent;
