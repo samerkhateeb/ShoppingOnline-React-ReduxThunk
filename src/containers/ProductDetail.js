@@ -14,17 +14,11 @@ const ProductDetail = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
 
-  // console.log("product", product);
-
-  // console.log("id", id);
-
   useEffect(() => {
     if (id && id !== "") {
       dispatch(fetchProduct(id));
     }
     return () => {
-      // console.log("i am in remove product now");
-
       dispatch(removeSelectProduct());
     };
   }, [id]);

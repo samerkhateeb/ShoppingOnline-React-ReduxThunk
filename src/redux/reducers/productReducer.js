@@ -7,7 +7,7 @@ const initialState = {
 // The only place have access to the state,
 // connect product reducer with Action, based ont he action things will  move forward.
 // from the frontend -> Action -> reducer, it will get the  {type , payload}  from the action, based on that it will return the data
-//  type will be SET_PRODUCTS, and for state it should passed the new state (plus)  the new data (payload)
+// type will be SET_PRODUCTS, and for state it should passed the new state (plus)  the new data (payload)
 export const productsReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case ActionTypes.SET_PRODUCTS:

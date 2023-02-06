@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="ui fixed  menu">
       <div className="ui container center">
-        <h2>Shope 1</h2>
+        <h2>Shoping POC APP</h2>
       </div>
     </div>
   );
