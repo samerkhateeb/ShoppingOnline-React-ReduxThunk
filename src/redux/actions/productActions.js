@@ -9,7 +9,7 @@ export const fetchProducts =
   async (dispatch) => {
     const response = await fakeStoreApi.get(`/products`);
     // const response = await axios.get(`https://fakestoreapi.com/products`);
-    console.log(response.data);
+    console.log("response.data", response.data);
     // dispatch the action here :)
     dispatch({ type: ActionTypes.FETCH_PRODUCTS, payload: response.data });
 
